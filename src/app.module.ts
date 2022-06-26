@@ -11,7 +11,6 @@ import { SendMailProducerService } from './jobs/sendMail-producer-service';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.env.development.local', '.env'],
       load: [config],
     }),
     BullModule.forRoot({
